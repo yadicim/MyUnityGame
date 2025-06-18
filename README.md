@@ -12,7 +12,7 @@ R = Resetoi pupu alkuun
 Kun pupu osuu pistealueeseen, saat pisteitä
 
 
-[👉 Lataa tästä (Google Drive)](https://drive.google.com/drive/folders/1k7XRwq08OF0mpXRm-5N1VwnKn1Nu_nH4?usp=sharing)
+[👉 Pelää tästä (Google Drive)](https://yadicim.itch.io/katapultti)
 
 
 
