@@ -12,7 +12,7 @@ R = Resetoi pupu alkuun
 Kun pupu osuu pistealueeseen, saat pisteitä
 
 
-[👉 Lataa tästä (Google Drive)](https://drive.google.com/file/d/1pB2cJSzN6x6bqG9IvfF-izTXUc4Z7I_y/view?usp=drive_link)
+[👉 Lataa tästä (Google Drive)](https://drive.google.com/drive/folders/1k7XRwq08OF0mpXRm-5N1VwnKn1Nu_nH4?usp=sharing)
 
 
 
