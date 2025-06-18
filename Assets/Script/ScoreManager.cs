@@ -18,14 +18,14 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int points)
     {
         score += points;
-        Debug.Log("Pisteet: " + score);
+        Debug.Log("Score: " + score);
         UpdateUI();
 
     }
     void UpdateUI()
     {
         if (scoreText != null)
-        scoreText.text= "Pisteet: " + score;
+        scoreText.text= "Score: " + score;
     }
 
 
