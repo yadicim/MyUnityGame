@@ -9,6 +9,8 @@ Nuolinäppäimet = Pyöritä katapulttia ( tai A/D)
 
 R = Resetoi pupu alkuun
 
+T= Heittää 3 kertää
+
 Kun pupu osuu pistealueeseen, saat pisteitä
 
 
