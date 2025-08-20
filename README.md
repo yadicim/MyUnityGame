@@ -2,16 +2,62 @@
 🎯 Sovelluksen käyttötarkoitus
 Tämä on Unityllä toteutettu katapulttipeli, jossa pelaaja laukaisee pupun katapultista ja yrittää osua maaleihin. Tavoitteena on kerätä pisteitä osumalla laatikoihin tai pistealueisiin.
 
-🔄 Sovelluksen toiminta
-Space = Ammu pupu katapultista
+🔄** Sovelluksen toiminta**
+--> Katapultin laukaisu
+Space = Ammu pupu katapultista 
+Hahmo laukaistaan painamalla välilyöntiä (Space).
+
+Laukaisu tapahtuu Launch()-funktiolla, joka:
+
+Vapauttaa Rigidbody-komponentin liikkeelle
+
+Lisää impulssivoiman valittuun suuntaan
+
+Käynnistää katapultin animaation
+
+
+**--> Katapultin pyöritys**
+
+Katapultin suuntaa voi muuttaa nuolinäppäimillä (vasen/oikea).
+
+HandleRotation() hoitaa pyörityksen Horizontal-akselin mukaan.
+
+Hahmon asento seuraa katapulttia, kun sitä ei ole vielä laukaistu.
 
 Nuolinäppäimet = Pyöritä katapulttia ( tai A/D)
 
-R = Resetoi pupu alkuun
+**--> Katapultin resetointi**
+R = Resetoi pupu alkuun (Painamalla R-näppäintä hahmo palautuu alkuasentoon)
+ResetCatapult() asettaa hahmon takaisin katapultin kärkeen ja estää liikkeen (isKinematic = true).
 
 T= Heittää 3 kertää
 
-Kun pupu osuu pistealueeseen, saat pisteitä
+**--> Uusi ominaisuus: Automaattinen laukaisusilmukka**
+
+Koodi;
+
+ IEnumerator TestMultipleLaunches(int count, float delay)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            Debug.Log($"Launch {i + 1}");
+            Launch();
+            yield return new WaitForSeconds(delay);
+            ResetCatapult();
+            yield return new WaitForSeconds(0.5f); // pieni tauko resetin jälkeen
+        }
+    }
+    Painamalla T-näppäintä funktio käynnistyy:
+    StartCoroutine(TestMultipleLaunches(3, 3f));
+    Hahmo laukaisee 3 kertaa, 3 sekunnin välillä.
+    Jokaisen laukaisun jälkeen katapultti palautuu ja odottaa hetken ennen seuraavaa kierrosta.
+
+  Kun pupu osuu pistealueeseen, saat pisteitä.
+**Jatkokehitysideoita**
+-Mahdollisuus määrittää laukaisujen määrä ja viive suoraan pelin valikosta,
+-Mahdollisuus valita erilaisia hahmoja,
+-Mahdollisuus siirtyä seuraavalle tasolle,
+
 
 
 [👉 Pelää tästä](https://yadicim.itch.io/katapultti)
