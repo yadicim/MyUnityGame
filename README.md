@@ -54,9 +54,9 @@ Koodi;
 
   Kun pupu osuu pistealueeseen, saat pisteitä.
 **Jatkokehitysideoita**
--Mahdollisuus määrittää laukaisujen määrä ja viive suoraan pelin valikosta,
--Mahdollisuus valita erilaisia hahmoja,
--Mahdollisuus siirtyä seuraavalle tasolle,
+-Mahdollisuus määrittää laukaisujen määrä ja viive suoraan pelin valikosta,/n
+-Mahdollisuus valita erilaisia hahmoja,/n
+-Mahdollisuus siirtyä seuraavalle tasolle./n
 
 
 
